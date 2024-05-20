@@ -1,9 +1,9 @@
 /* !!!!! Estilizar texto !!!!! */
 
 :root{
-    --cor-primaria: black;
-    --cor-secundaria: white;
-    --cor-terciaria: #20d8dc;
+    --cor-primaria: #070F2B;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #9290C3;
     --cor-quaternaria: ;
     --cor-hover: #272727;
 
@@ -125,12 +125,16 @@ body{
     border-top: solid 1px var(--cor-terciaria);
     padding: 1rem;
     text-align: center;
-    font-family: var(--fonte-secundaria);
-    font-size: 1rem;
+}
+
+.rodape__imagem{
+    width: 5rem;
 }
 
 .rodape__texto{
     margin-top: 1%;
+    font-family: var(--fonte-secundaria);
+    font-size: 0.7rem;
 }
 
 /*  HABILIDADES  */
