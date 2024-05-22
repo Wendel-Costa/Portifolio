@@ -5,7 +5,8 @@
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #9290C3;
     --cor-quaternaria: ;
-    --cor-hover: #272727;
+    --cor-hover: #9290C3;
+    --cor-hover-dois: #F6F6F6;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -31,6 +32,7 @@ body{
 .cabecalho__links{
     display: flex;
     gap: 2rem;
+    justify-content: space-between;
 }
 
 .cabecalho__links__link{
@@ -39,7 +41,32 @@ body{
     font-weight: 600;
     text-decoration: none;
     color: var(--cor-terciaria);
-    /*!!!!!!ADICIONAR ÍCONES!!!!!*/
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    .cabecalho__links__link__icone__desativado{
+        display: none;
+    }
+}
+
+.cabecalho__links__link:hover{
+    color: var(--cor-hover-dois);
+    .cabecalho__links__link__icone{
+        display: none;
+    }
+    .cabecalho__links__link__icone__desativado{
+        display: block;
+        width: 1.5rem;
+    }
+}
+
+.cabecalho__links__link__icone{
+    width: 1.5rem;
+}
+
+.cabecalho__links__link__atual{
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
 }
 
 .tela{
