@@ -152,6 +152,7 @@ body{
     border-top: solid 1px var(--cor-terciaria);
     padding: 1rem;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .rodape__imagem{
@@ -224,4 +225,70 @@ body{
 
 .projetos__imagens__imagem{
     width: 12rem;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 5%;
+    }
+    .cabecalho__links{
+        justify-content: center;
+    }
+
+    .tela{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .tela__conteudo{
+        width: 80%;
+        text-align: center;
+    }
+
+    .tela__imagem{
+        width: 12rem;
+    }
+
+    .rodape{
+        position: static;
+    }
+
+    .tela__conteudo__certificados{
+        display: flex;
+        justify-content: center;
+    }
+    .projetos{
+        padding: 0;
+        margin: 0;
+        height: 80%;
+    }
+    .projetos__conteudo{
+        text-align: center;
+    }
+    .projetos__imagens{
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: center;
+    }
+    .projetos__imagens__imagem{
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 320px){
+    .cabecalho__links__link__icone{
+        display: none;
+    }
+    .cabecalho__links{
+        gap: 1rem;
+    }
+    .cabecalho__links__link{
+        font-size: 0.7rem;
+    }
+    .tela__imagem{
+        width: 8rem;
+    }
+    .tela__conteudo__links__link{
+        width: 80%;
+    }
 }
