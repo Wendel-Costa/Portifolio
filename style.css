@@ -1,10 +1,10 @@
 /* !!!!! Estilizar texto !!!!! */
 
 :root{
-    --cor-primaria: #070F2B;
+    --cor-primaria: black;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #9290C3;
-    --cor-quaternaria: ;
+    --cor-quaternaria: #1B1A55;/*#1F6E8C*/
     --cor-hover: #9290C3;
     --cor-hover-dois: #F6F6F6;
 
@@ -15,6 +15,10 @@
 *{
     margin: 0;
     padding: 0;
+}
+
+strong{
+    color: var(--cor-quaternaria);
 }
 
 body{
@@ -94,10 +98,11 @@ body{
 .tela__conteudo__texto__titulo{
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
 }
 
 .tela__conteudo__texto__paragrafo{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -227,7 +232,7 @@ body{
     width: 12rem;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1000px){
     .cabecalho{
         padding: 5%;
     }
