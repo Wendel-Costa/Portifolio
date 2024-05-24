@@ -25,30 +25,61 @@
                 Projetos
             </a>
         </nav>
+
+        <nav class="cabecalho__links--mobile invisible">
+            <a href="index.html" class="cabecalho__links__link">
+                <img class="cabecalho__links__link__icone" src="Icones/Home.svg" alt="Icone">
+                <img class="cabecalho__links__link__icone__desativado" src="Icones/HomeDesativado.svg" alt="Icone">
+                Home
+            </a>
+            <a href="habilidades.html" class="cabecalho__links__link cabecalho__links__link__atual">
+                <img class="cabecalho__links__link__icone" src="Icones/Habilidades.svg" alt="Icone">
+                <img class="cabecalho__links__link__icone__desativado" src="Icones/HabilidadesDesativada.svg" alt="Icone">
+                Habilidades
+            </a>
+            <a href="projetos.html" class="cabecalho__links__link">
+                <img class="cabecalho__links__link__icone" src="Icones/Projetos.svg" alt="Icone">
+                <img class="cabecalho__links__link__icone__desativado" src="Icones/ProjetosDesativado.svg" alt="Icone">
+                Projetos
+            </a>
+        </nav>
+
+        <button  class="button__menu">
+            <img src="Icones/Menu.svg" alt="Icone menu">
+        </button>
     </header>
 
-    <main class="tela">
+    <main class="tela tela__habilidades">
         <section class="tela__conteudo">
             <div class="tela__conteudo__texto">
                 <h1 class="tela__conteudo__texto__titulo">Habilidades</h1>
-                <p class="tela__conteudo__texto__paragrafo">texto Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt libero fugiat fugit magni suscipit, ratione nemo nostrum nam sequi unde vero alias nisi neque commodi ipsa nobis. Ab, dolorem quo!</p>
+                <p class="tela__conteudo__texto__paragrafo">Tenho experiência em <strong>desenvolvimento de páginas web</strong>, criando sites interativos e funcionais. Sou habilidoso na <strong>análise de dados</strong>, ajudando empresas a tomar decisões baseadas em dados. Minha competência em <strong>JavaScript</strong> permite a criação de aplicações web dinâmicas, e com <strong>Python</strong>, posso automatizar tarefas e desenvolver aplicações back-end robustas.</p>
             </div>
 
             <div class="tela__conteudo__certificados">
-                <button class="tela__conteudo__certificados__botao">Certificados</button>
+                <a href="https://docs.google.com/document/d/145prX4XMrezUrQVog0P6cz1L3ke0KttouxN04C5FIkw/edit?usp=sharing" target="_blank" class="tela__conteudo__certificados__botao">Currículo</a>
             </div>
         </section>
 
 
-        <div class="tela__conteudo__texto">
-            <p class="tela__conteudo__texto__habilidades">Desenvolvimento de Páginas Web
-            </p>
-            <p class="tela__conteudo__texto__habilidades">Análise de Dados
-            </p>
-            <p class="tela__conteudo__texto__habilidades">Linguagem JavaScript
-            </p>
-            <p class="tela__conteudo__texto__habilidades">Git e Github
-            </p>
+        <div class="tela__conteudo__habilidades">
+            <div class="tela__conteudo__habilidades__habilidade">
+                <img class="tela__conteudo__habilidades__habilidade__icone" src="Icones/Web.svg" alt="Icone Web">
+                <p>Desenvolvimento de Páginas Web</p>
+            </div>
+
+            <div class="tela__conteudo__habilidades__habilidade">
+                <img class="tela__conteudo__habilidades__habilidade__icone" src="Icones/Dados.svg" alt="Icone Dados">
+                <p>Análise de Dados</p>
+            </div>
+            <div class="tela__conteudo__habilidades__habilidade">
+                <img class="tela__conteudo__habilidades__habilidade__icone" src="Icones/Javascript.svg" alt="Icone JavaScript">
+                <P>Linguagem JavaScript</P>
+            </div>
+            <div class="tela__conteudo__habilidades__habilidade">
+                <img class="tela__conteudo__habilidades__habilidade__icone" src="Icones/Python.svg" alt="Icone Python">
+                <p>Linguagem Python</p>
+            </div>
         </div>
 
 
@@ -59,5 +90,7 @@
         <img class="rodape__imagem" src="/Icones/Alura.svg" alt="Logo Alura Include">
         <p class="rodape__texto">Criado por: Wendel Costa</p>
     </footer>
+
+    <script src="js/menuMobile.js"></script>
 </body>
 </html>

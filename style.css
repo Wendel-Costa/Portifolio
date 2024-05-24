@@ -25,18 +25,50 @@ body{
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .cabecalho{
     display: flex;
     justify-content: center;
     margin: 1%;
+    position: relative;/**/
 }
 
 .cabecalho__links{
     display: flex;
     gap: 2rem;
     justify-content: space-between;
+}
+
+
+.cabecalho__links--mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0rem;
+    background-color: #1B1A55;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 2rem;
+}  
+
+.invisible{
+    display: none;
+}
+
+.button__menu{
+    width: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: none;
 }
 
 .cabecalho__links__link{
@@ -48,9 +80,9 @@ body{
     display: flex;
     gap: 5px;
     align-items: center;
-    .cabecalho__links__link__icone__desativado{
-        display: none;
-    }
+}
+.cabecalho__links__link .cabecalho__links__link__icone__desativado{
+    display: none;
 }
 
 .cabecalho__links__link:hover{
@@ -74,10 +106,11 @@ body{
 }
 
 .tela{
-    padding: 5% 8%;
+    padding: 1% 8% 5% 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1 0 auto;
 }
 
 .tela__conteudo{
@@ -148,16 +181,19 @@ body{
 }
 
 .rodape {
-    position: fixed;
+    position:relative ;
+    flex-shrink: 0;
     left: 0;
     bottom: 0;
     width: 100%;
-    margin-top: 3rem;
+    height: 6rem;
+    margin-top: 0.5rem;
     color: var(--cor-secundaria);
     border-top: solid 1px var(--cor-terciaria);
     padding: 1rem;
     text-align: center;
     box-sizing: border-box;
+    
 }
 
 .rodape__imagem{
@@ -171,6 +207,20 @@ body{
 }
 
 /*  HABILIDADES  */
+.tela__conteudo__habilidades{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tela__conteudo__habilidades__habilidade{
+    font-size: 1.4rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    display: flex;
+    gap: 0.5rem;
+}
+
 
 .tela__conteudo__certificados__botao{
     display: flex;
@@ -182,7 +232,7 @@ body{
     text-align: center;
     border-radius: 16px;
     border: 2px solid var(--cor-terciaria);
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 21.5px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -244,9 +294,23 @@ body{
         flex-direction: column-reverse;
         gap: 2rem;
     }
+
+    .tela__habilidades{
+        flex-direction: column;
+    }
+
     .tela__conteudo{
         width: 80%;
         text-align: center;
+    }
+
+    br{
+        display: none;
+    }
+
+    .tela__conteudo__habilidades{
+        width: 80%;
+        align-items: center;
     }
 
     .tela__imagem{
@@ -280,12 +344,33 @@ body{
 
 }
 
-@media (max-width: 320px){
+@media (max-width: 400px){
     .cabecalho__links__link__icone{
         display: none;
     }
+    .tela__conteudo__habilidades__habilidade__icone{
+        display: none;
+    }
+
+    .tela__conteudo__habilidades{
+        align-items: start;
+    }
+
+    .tela{
+        padding-top: 1rem;
+    }
+
+    .button__menu{
+        display: initial;
+    }
+
+    .cabecalho{
+        padding: 0;
+        margin: 0;
+    }
+
     .cabecalho__links{
-        gap: 1rem;
+        display: none;
     }
     .cabecalho__links__link{
         font-size: 0.7rem;
@@ -294,6 +379,15 @@ body{
         width: 8rem;
     }
     .tela__conteudo__links__link{
+        width: 80%;
+    }
+
+    .tela__conteudo__links__link__imagem{
+        display: none;
+    }
+
+
+    .tela__conteudo__certificados__botao{
         width: 80%;
     }
 }
