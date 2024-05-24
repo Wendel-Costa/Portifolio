@@ -1,7 +1,7 @@
 /* !!!!! Estilizar texto !!!!! */
 
 :root{
-    --cor-primaria: black;
+    --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #9290C3;
     --cor-quaternaria: #1B1A55;/*#1F6E8C*/
@@ -184,6 +184,8 @@ body{
     width: 30%;
     height: 30%;
     margin: 0 8%;
+    border-radius: 25px;
+    
 }
 
 .rodape {
@@ -392,7 +394,7 @@ body{
         font-size: 0.7rem;
     }
     .tela__imagem{
-        width: 8rem;
+        width: 70%;
     }
     .tela__conteudo__links__link{
         width: 80%;
