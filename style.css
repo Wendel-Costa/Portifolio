@@ -30,11 +30,15 @@ body{
     flex-direction: column;
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     justify-content: center;
     margin: 1%;
-    position: relative;/**/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--cor-primaria); /* Mantém o fundo ao rolar */
+    padding: 1rem 0;
 }
 
 .cabecalho__links{
@@ -110,6 +114,26 @@ body{
     text-decoration: underline;
     text-underline-offset: 0.2rem;
 }
+
+
+.cabecalho__links__link__atual {
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+.cabecalho__links__link__icone__desativado {
+    display: none;
+}
+
+.cabecalho__links__link__atual .cabecalho__links__link__icone__desativado {
+    display: inline;
+}
+
+.cabecalho__links__link__atual .cabecalho__links__link__icone {
+    display: none;
+}
+
+
 
 .tela{
     padding: 1% 8% 5% 8%;

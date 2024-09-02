@@ -9,69 +9,102 @@
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__links">
-            <a href="index.html" class="cabecalho__links__link cabecalho__links__link__atual">
-                <img class="cabecalho__links__link__icone" src="Icones/Home.svg" alt="Icone">
-                <img class="cabecalho__links__link__icone__desativado" src="Icones/HomeDesativado.svg" alt="Icone">
+            <a href="#home" class="cabecalho__links__link cabecalho__links__link__atual">
+                <img class="cabecalho__links__link__icone" src="Icones/Home.svg" alt="Ícone">
+                <img class="cabecalho__links__link__icone__desativado" src="Icones/HomeDesativado.svg" alt="Ícone">
                 Home
             </a>
-            <a href="habilidades.html" class="cabecalho__links__link">
-                <img class="cabecalho__links__link__icone" src="Icones/Habilidades.svg" alt="Icone">
-                <img class="cabecalho__links__link__icone__desativado" src="Icones/HabilidadesDesativada.svg" alt="Icone">
+            <a href="#habilidades" class="cabecalho__links__link">
+                <img class="cabecalho__links__link__icone" src="Icones/Habilidades.svg" alt="Ícone">
+                <img class="cabecalho__links__link__icone__desativado" src="Icones/HabilidadesDesativada.svg" alt="Ícone">
                 Habilidades
             </a>
-            <a href="projetos.html" class="cabecalho__links__link">
-                <img class="cabecalho__links__link__icone" src="Icones/Projetos.svg" alt="Icone">
-                <img class="cabecalho__links__link__icone__desativado" src="Icones/ProjetosDesativado.svg" alt="Icone">
+            <a href="#projetos" class="cabecalho__links__link">
+                <img class="cabecalho__links__link__icone" src="Icones/Projetos.svg" alt="Ícone">
+                <img class="cabecalho__links__link__icone__desativado" src="Icones/ProjetosDesativado.svg" alt="Ícone">
                 Projetos
             </a>
         </nav>
 
-        <nav class="cabecalho__links--mobile invisible">
-            <a href="index.html" class="cabecalho__links__link cabecalho__links__link__atual">
-                <img class="cabecalho__links__link__icone" src="Icones/Home.svg" alt="Icone">
-                <img class="cabecalho__links__link__icone__desativado" src="Icones/HomeDesativado.svg" alt="Icone">
-                Home
-            </a>
-            <a href="habilidades.html" class="cabecalho__links__link">
-                <img class="cabecalho__links__link__icone" src="Icones/Habilidades.svg" alt="Icone">
-                <img class="cabecalho__links__link__icone__desativado" src="Icones/HabilidadesDesativada.svg" alt="Icone">
-                Habilidades
-            </a>
-            <a href="projetos.html" class="cabecalho__links__link">
-                <img class="cabecalho__links__link__icone" src="Icones/Projetos.svg" alt="Icone">
-                <img class="cabecalho__links__link__icone__desativado" src="Icones/ProjetosDesativado.svg" alt="Icone">
-                Projetos
-            </a>
-        </nav>
-
-        <button  class="button__menu">
-            <img src="Icones/Menu.svg" alt="Icone menu">
+        <button class="button__menu">
+            <img src="Icones/Menu.svg" alt="Ícone menu">
         </button>
     </header>
 
-    <main class="tela">
-        <section class="tela__conteudo">
-            <div class="tela__conteudo__texto">
-                <h1 class="tela__conteudo__texto__titulo">Bem-vindo! <br> Me chamo <br><strong>Wendel Costa</strong></h1>
-                <p class="tela__conteudo__texto__paragrafo">Olá! Sou Wendel Davi, aspirante a <strong>desenvolvedor de software Backend </strong>. Estou no 3° período do curso de Ciência e Tecnologia da UFMA e sou aluno do programa Trilhas Inova - Backend. </p>
+    <main>
+        <!-- Seção Home -->
+        <section id="home" class="tela">
+            <div class="tela__conteudo">
+                <div class="tela__conteudo__texto">
+                    <h1 class="tela__conteudo__texto__titulo">Bem-vindo! <br> Me chamo <br><strong>Wendel Costa</strong></h1>
+                    <p class="tela__conteudo__texto__paragrafo">Olá! Sou Wendel Davi, aspirante a <strong>desenvolvedor de software Backend</strong>. Estou no 3° período do curso de Ciência e Tecnologia da UFMA e sou aluno do programa Trilhas Inova - Backend.</p>
+                </div>
+
+                <div class="tela__conteudo__links">
+                    <h3 class="tela__conteudo__links__subtitulo">Acesse minhas redes:</h3>
+                    <a href="https://www.linkedin.com/in/wendelcosta-tech/" target="_blank" class="tela__conteudo__links__link">
+                        <img class="tela__conteudo__links__link__imagem" src="Icones/Linkedin.svg" alt="Ícone Linkedin">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Wendel-Costa" target="_blank" class="tela__conteudo__links__link">
+                        <img class="tela__conteudo__links__link__imagem" src="Icones/Github.svg" alt="Ícone Github">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <img class="tela__imagem" src="Icones/foto.png" alt="Foto de perfil">
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="habilidades" class="tela tela__habilidades">
+            <div class="tela__conteudo">
+                <h1 class="tela__conteudo__texto__titulo">Habilidades</h1>
+                <p class="tela__conteudo__texto__paragrafo">Tenho experiência em <strong>desenvolvimento de páginas web</strong>, criando sites interativos e funcionais. Sou habilidoso na <strong>análise de dados</strong>, ajudando empresas a tomar decisões baseadas em dados. Minha competência em <strong>JavaScript</strong> permite a criação de aplicações web dinâmicas, e com <strong>Python</strong>, posso automatizar tarefas e desenvolver aplicações back-end robustas.</p>
+
+                <div class="tela__conteudo__certificados">
+                    <a href="https://docs.google.com/document/d/145prX4XMrezUrQVog0P6cz1L3ke0KttouxN04C5FIkw/edit?usp=sharing" target="_blank" class="tela__conteudo__certificados__botao">Currículo</a>
+                </div>
             </div>
 
-            <div class="tela__conteudo__links">
-                <h3 class="tela__conteudo__links__subtitulo">Acesse minhas redes:</h3>
-
-                <a href="https://www.linkedin.com/in/wendelcosta-tech/" target="_blank" class="tela__conteudo__links__link">
-                    <img class="tela__conteudo__links__link__imagem" src="Icones/Linkedin.svg" alt="Icone Linkedin">
-                    LinkedIn
-                </a>
-
-                <a href="https://github.com/Wendel-Costa" target="_blank" class="tela__conteudo__links__link">
-                    <img class="tela__conteudo__links__link__imagem" src="Icones/Github.svg" alt="Icone github">
-                    GitHub</a>
+            <div class="tela__conteudo__habilidades">
+                <div class="tela__conteudo__habilidades__habilidade">
+                    <img class="tela__conteudo__habilidades__habilidade__icone" src="Icones/Web.svg" alt="Ícone Web">
+                    <p>Desenvolvimento de Páginas Web</p>
+                </div>
+                <div class="tela__conteudo__habilidades__habilidade">
+                    <img class="tela__conteudo__habilidades__habilidade__icone" src="Icones/Dados.svg" alt="Ícone Dados">
+                    <p>Análise de Dados</p>
+                </div>
+                <div class="tela__conteudo__habilidades__habilidade">
+                    <img class="tela__conteudo__habilidades__habilidade__icone" src="Icones/Javascript.svg" alt="Ícone JavaScript">
+                    <p>Linguagem JavaScript</p>
+                </div>
+                <div class="tela__conteudo__habilidades__habilidade">
+                    <img class="tela__conteudo__habilidades__habilidade__icone" src="Icones/Python.svg" alt="Ícone Python">
+                    <p>Linguagem Python</p>
+                </div>
             </div>
         </section>
 
-        <img class="tela__imagem" src="Icones/foto.png" alt="Foto de perfil">
-
+        <!-- Seção Projetos -->
+        <section id="projetos" class="projetos">
+            <div class="projetos__conteudo">
+                <h1 class="projetos__conteudo__titulo">Projetos</h1>
+                <p class="projetos__conteudo__paragrafo">Dentre os projetos que desenvolvi, destaco um Formulário de Inscrição, Jogo de Adivinhação de Números, e um Jogo de Atravessar a Rua onde os usuários devem evitar carros. Todos foram desenvolvidos com JavaScript para a lógica do programa e HTML e CSS para o design.</p>
+            </div>
+            
+            <div class="projetos__imagens">
+                <a class="projetos__imagens" href="https://editor.p5js.org/wendelreis1123/full/PAA3k7r4A" target="_blank">
+                    <img class="projetos__imagens__imagem" src="Icones/Projeto1.png" alt="Projeto 1">
+                </a>
+                <a class="projetos__imagens" href="https://formulario-de-inscricao-wendel-costas-projects.vercel.app/" target="_blank">
+                    <img class="projetos__imagens__imagem" src="Icones/Projeto2.png" alt="Projeto 2">
+                </a>
+                <a class="projetos__imagens" href="https://numero-secreto-tan-six.vercel.app/" target="_blank">
+                    <img class="projetos__imagens__imagem" src="Icones/Projeto3.png" alt="Projeto 3">
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer class="rodape">
@@ -80,6 +113,6 @@
     </footer>
 
 
-    <script src="js/menuMobile.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
